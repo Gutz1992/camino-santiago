@@ -1,0 +1,564 @@
+/* =====================================
+   RESET
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#f8f6f1;
+    color:#333;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 60px;
+    z-index:1000;
+}
+
+.logo{
+    color:#fff;
+    font-size:28px;
+    font-weight:700;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.navbar a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    opacity:.75;
+}
+
+/* бургер */
+
+.menu-toggle{
+    display:none;
+    font-size:34px;
+    color:#fff;
+    cursor:pointer;
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:90%;
+    max-width:900px;
+    text-align:center;
+    color:white;
+}
+
+.hero-top{
+    letter-spacing:3px;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    font-size:28px;
+    font-weight:300;
+    margin-bottom:25px;
+}
+
+.hero-description{
+    max-width:650px;
+    margin:0 auto 40px;
+    line-height:1.8;
+    font-size:21px;
+}
+
+.hero-info{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+.card{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(8px);
+    padding:18px 25px;
+    border-radius:16px;
+    min-width:150px;
+    font-weight:600;
+}
+
+.button{
+    display:inline-block;
+    background:#4f7b52;
+    color:white;
+    text-decoration:none;
+    padding:16px 38px;
+    border-radius:40px;
+    transition:.3s;
+    font-weight:700;
+}
+
+.button:hover{
+    background:#3d6541;
+}/* =====================================
+   ABOUT
+===================================== */
+
+.about{
+    padding:120px 0;
+}
+
+.section-tag{
+    display:inline-block;
+    color:#6f8d69;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+.about h2{
+    font-size:48px;
+    color:#244228;
+    margin-bottom:25px;
+}
+
+.about-text{
+    max-width:760px;
+    font-size:20px;
+    line-height:1.9;
+    color:#666;
+}
+
+.features{
+    display:flex;
+    gap:35px;
+    flex-wrap:wrap;
+    margin-top:70px;
+}
+
+.feature{
+    flex:1;
+    min-width:250px;
+    background:#fff;
+    padding:40px;
+    border-radius:22px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.feature h3{
+    color:#355d3b;
+    margin-bottom:15px;
+}
+
+.feature p{
+    color:#777;
+    line-height:1.8;
+}
+
+/* =====================================
+   PROGRAM
+===================================== */
+
+.program{
+    padding:100px 0;
+}
+
+.day-card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    margin:50px 0;
+}
+
+.day-card img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+}
+
+.day-info{
+    padding:35px;
+}
+
+.day-number{
+    color:#4f7b52;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.day-info h3{
+    font-size:30px;
+    color:#244228;
+    margin:15px 0;
+}
+
+.day-info p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:15px;
+}/* =====================================
+   GUIDE
+===================================== */
+
+.guide{
+    padding:100px 0;
+    background:#fff;
+}
+
+.guide-content{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.guide-photo,
+.guide-text{
+    flex:1;
+    min-width:320px;
+}
+
+.guide-photo img{
+    border-radius:20px;
+}
+
+.guide-text h2{
+    font-size:46px;
+    color:#244228;
+    margin-bottom:25px;
+}
+
+.guide-text p{
+    font-size:18px;
+    line-height:1.9;
+    color:#666;
+    margin-bottom:20px;
+}
+
+/* =====================================
+   PRICE
+===================================== */
+
+.price{
+    padding:100px 0;
+    background:#f8f6f1;
+    text-align:center;
+}
+
+.price h2{
+    font-size:56px;
+    color:#244228;
+    margin:15px 0;
+}
+
+.price-subtitle{
+    font-size:20px;
+    color:#666;
+    margin-bottom:60px;
+}
+
+.price-grid{
+    display:flex;
+    gap:35px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
+}
+
+.price-card{
+    flex:1;
+    min-width:300px;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    text-align:left;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.price-card h3{
+    color:#355d3b;
+    margin-bottom:25px;
+}
+
+.price-card ul{
+    padding-left:20px;
+}
+
+.price-card li{
+    margin-bottom:14px;
+    color:#666;
+    line-height:1.8;
+}
+
+/* =====================================
+   CONTACT
+===================================== */
+
+.contact{
+    padding:120px 0;
+    position:relative;
+    background:url("images/ocean.jpg") center/cover;
+    text-align:center;
+    color:white;
+}
+
+.contact::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.contact .container{
+    position:relative;
+    z-index:2;
+}
+
+.contact h2{
+    font-size:52px;
+    margin-bottom:25px;
+}
+
+.contact-text{
+    max-width:700px;
+    margin:0 auto 45px;
+    line-height:1.8;
+    font-size:22px;
+}
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.footer{
+    background:#244228;
+    color:white;
+    text-align:center;
+    padding:30px;
+}/* =====================================
+   MOBILE + BURGER
+===================================== */
+
+@media (max-width:900px){
+
+    /* ---------- Меню ---------- */
+
+    .navbar{
+        padding:20px;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:34px;
+        color:white;
+        cursor:pointer;
+    }
+
+    .navbar ul{
+        position:absolute;
+        top:75px;
+        left:0;
+        width:100%;
+        display:none;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+        background:rgba(20,20,20,.95);
+        padding:30px 0;
+        border-radius:0 0 20px 20px;
+    }
+
+    .navbar ul.active{
+        display:flex;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+        height:100vh;
+    }
+
+    .hero-content{
+        width:92%;
+    }
+
+    .hero h1{
+        font-size:40px;
+        line-height:1.15;
+    }
+
+    .hero h2{
+        font-size:22px;
+    }
+
+    .hero-description{
+        font-size:18px;
+        line-height:1.7;
+    }
+
+    .hero-info{
+        gap:15px;
+    }
+
+    .card{
+        width:100%;
+        min-width:0;
+    }
+
+    /* ---------- Заголовки ---------- */
+
+    .about h2,
+    .program h2,
+    .guide h2,
+    .price h2,
+    .contact h2{
+        font-size:34px;
+    }
+
+    .about-text{
+        font-size:18px;
+    }
+
+    /* ---------- Блоки ---------- */
+
+    .features,
+    .guide-content,
+    .price-grid,
+    .contact-buttons{
+        flex-direction:column;
+    }
+
+    .button{
+        width:100%;
+        max-width:340px;
+        margin:auto;
+        text-align:center;
+    }
+
+    .day-card img{
+        height:230px;
+    }
+
+    .day-info{
+        padding:25px;
+    }
+
+    .day-info h3{
+        font-size:25px;
+    }
+
+}
+
+/* =====================================
+   ANIMATIONS
+===================================== */
+
+.button,
+.feature,
+.price-card,
+.day-card{
+    transition:all .3s ease;
+}
+
+.button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+.feature:hover,
+.price-card:hover,
+.day-card:hover{
+    transform:translateY(-8px);
+}
+
+::selection{
+    background:#4f7b52;
+    color:white;
+}
