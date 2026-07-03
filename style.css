@@ -134,7 +134,12 @@ img{
     line-height:1.8;
     font-size:21px;
 }
-
+.hero-route{
+    font-size:20px;
+    color:white;
+    margin-bottom:25px;
+    opacity:.95;
+}
 .hero-info{
     display:flex;
     justify-content:center;
@@ -561,4 +566,9 @@ img{
 ::selection{
     background:#4f7b52;
     color:white;
+}.footer-fop{
+    margin-top:10px;
+    font-size:12px;
+    opacity:.7;
+    color:#ffffff;
 }
