@@ -71,12 +71,8 @@ img{
 
 /* бургер */
 
-.menu-toggle{
-    display:none;
-    font-size:34px;
-    color:#fff;
-    cursor:pointer;
-}
+
+
 
 /* =====================================
    HERO
@@ -432,59 +428,22 @@ img{
 
     /* ---------- Меню ---------- */
 
-    .navbar{
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        padding:18px 20px;
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        z-index:3000;
-    }
+.navbar{
+    justify-content:center;
+    padding:20px;
+}
 
-    .logo{
-        font-size:28px;
-    }
+.logo{
+    font-size:30px;
+}
 
-    .menu-toggle{
-        display:block;
-        font-size:38px;
-        color:#fff;
-        cursor:pointer;
-        z-index:3001;
-    }
+.menu-toggle{
+    display:none;
+}
 
-    .navbar ul{
-        position:fixed;
-        top:0;
-        left:0;
-        width:100%;
-        height:100vh;
-        display:none;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        gap:24px;
-        background:rgba(20,20,20,.96);
-        z-index:2999;
-    }
-
-    .navbar ul.active{
-        display:flex;
-    }
-
-    .navbar ul li{
-        list-style:none;
-    }
-
-    .navbar ul a{
-        color:#fff;
-        text-decoration:none;
-        font-size:22px;
-        font-weight:600;
-    }
+.navbar ul{
+    display:none;
+}
 
     /* ---------- Hero ---------- */
 
