@@ -34,41 +34,24 @@ img{
    NAVBAR
 ===================================== */
 
+/* ---------- Меню ---------- */
+
 .navbar{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 60px;
-    z-index:1000;
+    padding:20px;
+    justify-content:center;
 }
 
 .logo{
-    color:#fff;
-    font-size:28px;
-    font-weight:700;
+    font-size:30px;
+}
+
+.menu-toggle{
+    display:none;
 }
 
 .navbar ul{
-    display:flex;
-    list-style:none;
-    gap:35px;
+    display:none;
 }
-
-.navbar a{
-    color:#fff;
-    text-decoration:none;
-    font-weight:500;
-    transition:.3s;
-}
-
-.navbar a:hover{
-    opacity:.75;
-}
-
 /* бургер */
 
 .menu-toggle{
@@ -471,8 +454,9 @@ img{
     }
 
     .hero-content{
-        width:92%;
-    }
+    width:92%;
+    top:56%;
+}
 
     .hero h1{
         font-size:40px;
